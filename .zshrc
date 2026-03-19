@@ -115,14 +115,17 @@ export NVM_DIR="$HOME/.nvm"
 # eval "$(fzf --zsh)"
 # export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
 
 # export PYTHON=/opt/homebrew/bin/python3.10
 # export KUBECONFIG=/Volumes/ExternalHome/Home/Documents/Projects/HomeLabHQ/homelab/kubernetes-cluster/k0s/kubeconfig
 
 # Task Master aliases added on 4/26/2025
-alias cd='z'
+# alias cd='z'
 
 export TERM=xterm-256color
 
 # export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+export PATH="$HOME/.local/bin:$PATH"
